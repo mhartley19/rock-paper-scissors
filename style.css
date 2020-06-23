@@ -1,0 +1,83 @@
+:root{
+    box-sizing: border-box;
+}
+
+body{
+
+    background-color: bisque;
+}
+h1{
+    text-align: center;
+}
+
+#gameBoard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+#playervscomp{
+    display:flex;
+    justify-content: start;
+}
+#selectionConatiner{
+    display: flex;
+    height: 200px;
+    width:  900px;
+    background-color: white;
+   margin-left: 150px;
+    justify-content: space-around;
+}
+
+#playerSelection{
+    display: flex;
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    align-items: center;
+    margin-left: 150px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+#computerSelection{
+    display: flex;
+    height: 200px;
+    width: 400px;
+    background-color: white;
+    margin-left:100px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+#winorloss{
+    display:flex;
+    height: 50px;
+    width: 300px;
+    background-color: white;
+    margin-left: 31%;
+    margin-top: 15px;
+
+}
+
+#rock{
+    background-color: red;
+}
+
+#paper{
+    background-color: greenyellow;
+
+}
+
+#scissors {
+    background-color: lightblue;
+}
+.selector{
+
+    width:100px;
+    height:100px;
+    text-align: center;
+    font-size: 40px;
+    
+}
