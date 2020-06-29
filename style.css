@@ -14,6 +14,7 @@ h1{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 
 }
 #playervscomp{
@@ -27,6 +28,7 @@ h1{
     background-color: white;
    margin-left: 150px;
     justify-content: space-around;
+    align-items: center;
 }
 
 #playerSelection{
@@ -58,6 +60,8 @@ h1{
     background-color: white;
     margin-left: 31%;
     margin-top: 15px;
+    align-items: center;
+    text-align: center;
 
 }
 
@@ -75,9 +79,14 @@ h1{
 }
 .selector{
 
-    width:100px;
-    height:100px;
+    width:150px;
+    height:150px;
     text-align: center;
     font-size: 40px;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    
+
     
 }
