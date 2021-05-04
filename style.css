@@ -1,16 +1,27 @@
 :root{
     box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 body{
-
     background-color: bisque;
+}
+
+#resetButton:hover{
+    color: black;
+
 }
 
 .button{
     background-image: linear-gradient(to bottom right, #fe0101, #add9e6);
+    width: 189px;
+    height: 38px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
 
 }
+
+
 
 .container{
     display: flex;
@@ -22,10 +33,10 @@ body{
 
 .container-players{
     font-size: 26px;
-    border: 2px solid black;
+    /* border: 2px solid black;
     padding: 5px 15px 5px 15px;
     background-image: linear-gradient(to bottom right, #fe0101, #add9e6);
-    border-radius: 5px;
+    border-radius: 5px; */
 
 }
 
@@ -56,7 +67,9 @@ body{
     align-items: center;
 }
 
-
+#main-title{
+    font-family: 'IBM Plex Mono', monospace;
+}
 
 
 #Game-Container{
@@ -136,14 +149,18 @@ body{
 
 #rock{
     background-color: red;
+    border-radius: 100%;
 }
 
 #paper{
-    background-color: greenyellow;
+    background-color: #24abfb;
 
 }
 
 #scissors {
     background-color: lightblue;
+    border-radius: 25%;
+    width: 115px;
+    
 }
 

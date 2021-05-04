@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
 </head>
 <body>
 <!-- <div id="Game-Container">  -->
     <div id="Gameboard">
-    <h1>Rock Paper Scissors!</h1>
+    <h1 id='main-title'>Rock Paper Scissors!</h1>
     
         <div id="Selection-Conatiner" class='container'>
 
                 <div class="selector" id="rock">Rock</div>
 
                 <div class="selector" id="paper">Paper</div>
-
+            
                 <div class="selector" id="scissors">Scissors</div>
         </div>
         
         <div id='Win-Loss-Reset-Container'>
                 <div id="winorloss" class='container'></div>
-                <input id='resetButton' class='button' type='button' value="New Game"></input>
+                
         </div>
         <div id=PlayerOne-PlayerTwo class='container'>
             
@@ -39,6 +41,8 @@
                     
                 </div>
         </div>
+        <button id='resetButton' class='button'>
+        New Game</button>
         
     </div>
 <!-- </div> -->
