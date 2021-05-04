@@ -8,12 +8,29 @@ body{
 }
 
 .container{
-   border-radius: 3%;
-   margin: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px;
+    border-radius: 10px;
 }
 
-.result{
+.result {
     margin: 10px 50px 10px 50px;
+}
+
+.selector{
+    display: flex;
+    width:90px;
+    height:90px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    
+
+    
 }
 
 
@@ -49,8 +66,8 @@ body{
 }
 #Selection-Conatiner{
     display: flex;
-    height: 200px;
-    width:  900px;
+    height: 160px;
+    width:  500px;
     background-color: white;
     
     justify-content: space-evenly;
@@ -59,8 +76,8 @@ body{
 
 #playerSelection{
     display: flex;
-    height: 200px;
-    width: 400px;
+    height: 160px;
+    width: 300px;
     background-color: white;
     align-items: center;
     justify-content: center;
@@ -68,8 +85,8 @@ body{
 
 #computerSelection{
     display: flex;
-    height: 200px;
-    width: 400px;
+    height: 160px;
+    width: 300px;
     background-color: white;
     align-items: center;
     justify-content: center;
@@ -98,16 +115,4 @@ body{
 #scissors {
     background-color: lightblue;
 }
-.selector{
 
-    width:150px;
-    height:150px;
-    text-align: center;
-    font-size: 40px;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    
-
-    
-}
