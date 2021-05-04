@@ -7,11 +7,26 @@ body{
     background-color: bisque;
 }
 
+.button{
+    background-image: linear-gradient(to bottom right, #fe0101, #add9e6);
+
+}
+
 .container{
     display: flex;
     justify-content: space-evenly;
     margin: 10px;
     border-radius: 10px;
+    font-size: 18px;
+}
+
+.container-players{
+    font-size: 26px;
+    border: 2px solid black;
+    padding: 5px 15px 5px 15px;
+    background-image: linear-gradient(to bottom right, #fe0101, #add9e6);
+    border-radius: 5px;
+
 }
 
 .result {
@@ -29,6 +44,7 @@ body{
     align-items: center;
     justify-content: center;
     border-radius: 5px;
+    border: 1px solid black
     
 
     
@@ -70,9 +86,15 @@ body{
     height: 160px;
     width:  500px;
     background-color: white;
-    
     justify-content: space-evenly;
     align-items: center;
+}
+
+#PlayerOne-PlayerTwo{
+    display: flex;
+    width: 445px;
+    justify-content: space-between;
+
 }
 
 #playerSelection{
