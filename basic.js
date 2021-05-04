@@ -2,6 +2,7 @@
 let rock = document.querySelector("#rock")
 let paper = document.querySelector("#paper")
 let scissors = document.querySelector("#scissors")
+let reset = document.querySelector("#resetButton")
 let playerSelection = document.querySelector("#playerSelection")
 let computerSelection = document.querySelector('#computerSelection')
 let wl = document.querySelector("#winorloss")
@@ -70,26 +71,41 @@ function computerOutput(selection) {
 
 }
 
+let newGame = true
 
 rock.addEventListener("click", function (event) {
+    if(newGame === true){
     let rockSel = event.target
     let rockCopy = rockSel.cloneNode(true)
     playerSelection.appendChild(rockCopy)
     computerOutput(rock)
+    }
+    
+    newGame = false
 })
 
 paper.addEventListener("click", function (event) {
+    if(newGame === true){
     let paperSel = event.target
     let paperCopy = paperSel.cloneNode(true)
     playerSelection.appendChild(paperCopy)
-    computerOutput(paper)
+    computerOutput(paper)}
+    
+    newGame= false
 })
 
 scissors.addEventListener("click", function (event) {
+    if(newGame === true){
     let sciSel = event.target
     let sciCopy = sciSel.cloneNode(true)
     playerSelection.appendChild(sciCopy)
-    computerOutput(scissors)
+    computerOutput(scissors)}
+    newGame = false
+})
+
+reset.addEventListener("click", function(event) {
+    newGame = true
+    window.location.reload()
 })
 
 

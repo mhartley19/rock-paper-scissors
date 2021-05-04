@@ -6,8 +6,24 @@ body{
 
     background-color: bisque;
 }
-h1{
-    text-align: center;
+
+
+#Game-Container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#Result-Container{
+    display: flex;
+    align-items: center;
+    
+}
+
+#Win-Loss-Reset-Container{
+    display: flex;
+    flex-direction: column;
+
 }
 
 #gameBoard{
@@ -21,12 +37,12 @@ h1{
     display:flex;
     justify-content: start;
 }
-#selectionConatiner{
+#Selection-Conatiner{
     display: flex;
     height: 200px;
     width:  900px;
     background-color: white;
-   margin-left: 150px;
+    
     justify-content: space-around;
     align-items: center;
 }
@@ -47,8 +63,8 @@ h1{
     height: 200px;
     width: 400px;
     background-color: white;
-    margin-left:100px;
-    margin-top: 50px;
+    /* margin-left:100px;
+    margin-top: 50px; */
     align-items: center;
     justify-content: center;
 }

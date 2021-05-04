@@ -7,24 +7,31 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="Game-Container"> 
     <h1>Rock Paper Scissors!</h1>
     <div id="gameboard">
-    <div id="selectionConatiner">
+        <div id="Selection-Conatiner">
 
-    <div class="selector" id="rock">Rock</div>
+                <div class="selector" id="rock">Rock</div>
 
-    <div class="selector" id="paper">Paper</div>
+                <div class="selector" id="paper">Paper</div>
 
-    <div class="selector" id="scissors">Scissors</div>
+                <div class="selector" id="scissors">Scissors</div>
+        </div>
+        
+        <div id='Win-Loss-Reset-Container'>
+                <div id="winorloss"></div>
+                <input id='resetButton' type='button' value="New Game"></input>
+        </div>
+        <div id="Result-Container">
+                <div id="playervscomp"></div>
+                <div id="playerSelection"></div>
+                <div id="computerSelection"></div>
+        </div>
+        
     </div>
-    <div id="winorloss"></div>
-    <div id="playervscomp">
-    <div id="playerSelection"></div>
-    <div id="computerSelection"></div>
-    </div>
-    </div>
-
+</div>
     <script src="basic.js"></script>
     
 </body>
-</html>√
+</html>
