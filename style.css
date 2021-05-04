@@ -1,18 +1,99 @@
 :root{
     box-sizing: border-box;
+    font-family: 'IBM Plex Mono', monospace;
 }
 
 body{
-
     background-color: bisque;
 }
-h1{
-    text-align: center;
+
+#resetButton:hover{
+    color: black;
+
 }
 
-#gameBoard{
+.button{
+    background-image: linear-gradient(to bottom right, #fe0101, #add9e6);
+    width: 189px;
+    height: 38px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 20px;
+
+}
+
+
+
+.container{
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+}
+
+.container-players{
+    font-size: 26px;
+    /* border: 2px solid black;
+    padding: 5px 15px 5px 15px;
+    background-image: linear-gradient(to bottom right, #fe0101, #add9e6);
+    border-radius: 5px; */
+
+}
+
+.result {
+    margin: 10px 50px 10px 50px;
+    width: 200px;
+}
+
+.selector{
+    display: flex;
+    width:90px;
+    height:90px;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    border: 1.5px solid black
+    
+
+    
+}
+
+.player-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#main-title{
+    font-family: 'IBM Plex Mono', monospace;
+}
+
+
+#Game-Container{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+#Result-Container{
+    display: flex;
+    justify-content: space-evenly;
+  
+}
+
+#Win-Loss-Reset-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#Gameboard{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -21,34 +102,36 @@ h1{
     display:flex;
     justify-content: start;
 }
-#selectionConatiner{
+#Selection-Conatiner{
     display: flex;
-    height: 200px;
-    width:  900px;
+    height: 160px;
+    width:  500px;
     background-color: white;
-   margin-left: 150px;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+}
+
+#PlayerOne-PlayerTwo{
+    display: flex;
+    width: 445px;
+    justify-content: space-between;
+
 }
 
 #playerSelection{
     display: flex;
-    height: 200px;
-    width: 400px;
+    height: 160px;
+    width: 250px;
     background-color: white;
     align-items: center;
-    margin-left: 150px;
-    margin-top: 50px;
     justify-content: center;
 }
 
 #computerSelection{
     display: flex;
-    height: 200px;
-    width: 400px;
+    height: 160px;
+    width: 250px;
     background-color: white;
-    margin-left:100px;
-    margin-top: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -58,8 +141,7 @@ h1{
     height: 50px;
     width: 300px;
     background-color: white;
-    margin-left: 31%;
-    margin-top: 15px;
+    margin-bottom: 15px;
     align-items: center;
     text-align: center;
 
@@ -67,26 +149,18 @@ h1{
 
 #rock{
     background-color: red;
+    border-radius: 100%;
 }
 
 #paper{
-    background-color: greenyellow;
+    background-color: #24abfb;
 
 }
 
 #scissors {
     background-color: lightblue;
-}
-.selector{
-
-    width:150px;
-    height:150px;
-    text-align: center;
-    font-size: 40px;
-    justify-content: center;
-    align-items: center;
-    font-weight: 700;
-    
-
+    border-radius: 25%;
+    width: 115px;
     
 }
+
