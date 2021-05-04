@@ -16,6 +16,7 @@ body{
 
 .result {
     margin: 10px 50px 10px 50px;
+    width: 200px;
 }
 
 .selector{
@@ -77,7 +78,7 @@ body{
 #playerSelection{
     display: flex;
     height: 160px;
-    width: 300px;
+    width: 250px;
     background-color: white;
     align-items: center;
     justify-content: center;
@@ -86,7 +87,7 @@ body{
 #computerSelection{
     display: flex;
     height: 160px;
-    width: 300px;
+    width: 250px;
     background-color: white;
     align-items: center;
     justify-content: center;
