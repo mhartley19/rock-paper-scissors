@@ -158,9 +158,20 @@ body{
 }
 
 #scissors {
-    background-color: lightblue;
-    border-radius: 25%;
-    width: 115px;
+    /* background-color: lightblue; */
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-top: 90px solid lightblue;
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    align-items: center;
+    justify-content: center;
+    
+
     
 }
 
