@@ -15,12 +15,16 @@ let scissorsCutPaper = document.createTextNode(" - Scissors Cut Paper!")
 
 
 
-function computerOutput(selection) {
+function computerOutput(selection){
 
     let ran = Math.floor(Math.random() * 3)
+    console.log(ran)
+
+    
 
     if (ran === 0) {
 
+        setTimeout(function(){
         if (selection === rock) {
             wl.appendChild(tie)
         }
@@ -34,10 +38,13 @@ function computerOutput(selection) {
         }
         let rockCopy = rock.cloneNode(true)
         return computerSelection.appendChild(rockCopy)
-    }
+    }, 1000)
+}
 
     if (ran === 1) {
 
+        
+        setTimeout(function(){
         if (selection === rock) {
             wl.appendChild(loss)
             wl.appendChild(paperCoversRock)
@@ -51,9 +58,12 @@ function computerOutput(selection) {
         }
         let paperCopy = paper.cloneNode(true)
         return computerSelection.appendChild(paperCopy)
-    }
+    }, 1000)
+}
 
     if (ran === 2) {
+
+        setTimeout(function(){
         if (selection === rock) {
             wl.appendChild(win)
             wl.appendChild(rockSmashesSci)
@@ -67,7 +77,8 @@ function computerOutput(selection) {
         }
         let scissorsCopy = scissors.cloneNode(true)
         return computerSelection.appendChild(scissorsCopy)
-    }
+    }, 1000)
+}
 
 }
 
@@ -89,7 +100,8 @@ paper.addEventListener("click", function (event) {
     let paperSel = event.target
     let paperCopy = paperSel.cloneNode(true)
     playerSelection.appendChild(paperCopy)
-    computerOutput(paper)}
+    computerOutput(paper)
+    }
     
     newGame= false
 })
@@ -99,7 +111,8 @@ scissors.addEventListener("click", function (event) {
     let sciSel = event.target
     let sciCopy = sciSel.cloneNode(true)
     playerSelection.appendChild(sciCopy)
-    computerOutput(scissors)}
+    computerOutput(scissors)
+    }
     newGame = false
 })
 
